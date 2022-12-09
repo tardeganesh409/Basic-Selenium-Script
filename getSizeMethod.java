@@ -1,11 +1,8 @@
 
-//write a script to open LinkDln application and Check HEIGHT AND WIDTH of username TextField
-
-//using getSixe()
+//write a script to get height and widht of UN textbox present in linkdln APPLICATION
 
 //05-12-2022
-
-package demo1;
+package qsp;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,11 +18,12 @@ public class getSizeMethod {
 		driver.manage().window().maximize();
 		driver.get("https://in.linkedin.com/");
 		int Height=driver.findElement(By.xpath("(//input[@class='input__input'])[1]")).getSize().getHeight();
-		System.out.println("The Username TextField Height is"+Height);
+		System.out.println("The Username TextField Height is "+Height);
 		int Width=driver.findElement(By.xpath("(//input[@class='input__input'])[1]")).getSize().getWidth();
-		System.out.println("The Username TextField Width is"+Width);
+		System.out.println("The Username TextField Width is "+Width);
         driver.close();
 		
+
 
 	}
 
